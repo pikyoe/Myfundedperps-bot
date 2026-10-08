@@ -1,0 +1,12 @@
+[project]
+name = "myfundedperps-eval-bot"
+version = "0.1.0"
+description = "Risk-first trend breakout bot for MyFundedPerps evaluation accounts"
+requires-python = ">=3.11"
+dependencies = ["httpx>=0.27,<1", "websockets>=13,<16", "python-dotenv>=1.0,<2"]
+
+[project.scripts]
+mfp-bot = "mfp_bot.main:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
